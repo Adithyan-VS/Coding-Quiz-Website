@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+
+    <link rel="icon" href="https://inspire2k22.tech/img/Code.png" type="image/icon type">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main_game.css">
+
+</head>
+<p class="prompt">Click on leave button once you complete answering all the 30 questions</p>
+
+<body>
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div id="hud">
+                <!-- Question: Progress Bar -->
+                <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                        Question
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+                <!-- Timer -->
+                <div id="countdown">10:00</div>
+                <!-- Score -->
+                <div class="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score" name="Fscore">
+                        0
+                    </h1>
+                </div>
+            </div>
+
+            <h2 id="question">What is the answer to this question?</h2>
+            <div class="choice-container">
+                <p class="choice-prefix">A.</p>
+                <p class="choice-text" data-number="1">Choice 1</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B.</p>
+                <p class="choice-text" data-number="2">Choice 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C.</p>
+                <p class="choice-text" data-number="3">Choice 3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">D.</p>
+                <p class="choice-text" data-number="4">Choice 4</p>
+            </div>
+            <!-- <button id="bkbtn" style="padding: 50px; font-size:50px">Back</button> -->
+        </div>
+    </div>
+
+    <script src="main_game.js"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <!-- Java script for timer. -->
+    <script src="timer.js"></script>
+</body>
+
+</html>
+
+<!-- Added /Coding Quizz/end.html in main_game.js file  -->

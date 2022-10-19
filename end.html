@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHNOVATION 2K22</title>
+
+    <link rel="icon" href="https://inspire2k22.tech/img/Code.png" type="image/icon type">
+
+    <link rel="styleSheet" href="style.css">
+    <link rel="styleSheet" href="end.css">
+    <link rel="styleSheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qzqJPyxW3UR0BPsLaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+
+
+            <form id="myForm1" class="end-form-container" action="/CQuiz/contact.php" method="post">
+                <!-- <div id="content"> -->
+                <h1 id="finalScore" name="Fscore">0</h1>
+                <!-- </div> -->
+                <input type="text" id="textval" name="txt">
+                <h2 id="end-text">Enter your Name to save your score!</h2>
+                <input type="text" name="username" id="username" placeholder="Enter your Name!" required>
+
+
+                <h2 id="end-text1">Enter your College name!</h2>
+                <input type="text" name="cname" id="cname" placeholder="Enter your College Name!" required>
+
+                <button class="btn" id="saveScoreBtn" type="submit"> Save </button>
+            </form>
+            <!-- Play Again. -->
+            <!-- added  path /Coding Quizz/tryagain.html to host via xampp-->
+            <a href="/CQuiz/tryagain.html" class="btn">Play Again</a>
+            <!-- Go Home.  
+             <a href="/" class="btn">Go Home<i class="fas fa-home"></i></a> -->
+        </div>
+    </div>
+
+    <script src="end.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+
+    <!-- mostRecentScore to textbox [text box hidden] -->
+    <script>
+        //var txtval = document.getElementsByName("mostRecentScore").value;
+        var txtval = localStorage.getItem('mostRecentScore');
+        document.getElementById('textval').value = txtval;
+        document.write(txtval);
+    </script>
+</body>
+
+</html>
