@@ -19,7 +19,7 @@ A dynamic quiz application developed using HTML, CSS, and JavaScript. The applic
 
 1. Clone the repository.
 2. Set up the MySQL server and configure the necessary database and tables.
-3. Open the `index.php` file in a web browser to access the quiz application.
+3. Open the `index.html` file in a web browser to access the quiz application.
 4. Select a quiz category and start answering the questions.
 5. The progress bar will indicate the quiz completion, and the score will be updated in real-time.
 6. At the end of the quiz, enter your name to save your score with player details in local storage.
